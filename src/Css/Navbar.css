@@ -138,19 +138,68 @@
     bottom: 50%;
 }
 
+.drawer-box {
+    box-shadow: 20px 20px 20px gray;
+    background-color: rgb(243, 243, 243);
+    height: 100vh;
+    width: 100%;
+    animation-duration: 0.2s;
+}
+
+.menu {
+    padding-left: 10px;
+    transition: all .3s ease;
+    color: black;
+}
+
+.menu:hover {
+    color: gray;
+}
+
+.drawer-text {
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+
+.drawer-link-div {
+    padding-left: 10px;
+    height: 50px;
+    padding-top: 6px;
+    transition: all 0.5s ease;
+}
+
+.drawer-link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    color: gray;
+    transition: all .2s ease;
+}
+.drawer-link:hover{
+    color: black;
+}
+.drawer-link:active{
+    color: #FA00Df;
+}
+
 
 @media only screen and (max-width: 768px) {
     .nav-stuff {
         display: none;
     }
-
     .navbar-res {
         display: flex;
     }
-}
-@media only screen and (max-width: 530px) {
-    .button-87{
+    .nav-btn-87{
         display: none;
-    }
+    }   
+}
 
+@media only screen and (max-width: 530px) {
+    .button-87 {
+        display: block;
+    }
+    
 }
